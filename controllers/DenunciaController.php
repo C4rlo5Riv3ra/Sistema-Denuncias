@@ -34,7 +34,7 @@ class DenunciaController
     public function edit($id)
     {
         $this->denunciaModel->id = $id;
-        $denuncia = $this->denunciaModel->readOne();
+        $complaint = $this->denunciaModel->readOne();
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $this->denunciaModel->titulo = $_POST['titulo'];
