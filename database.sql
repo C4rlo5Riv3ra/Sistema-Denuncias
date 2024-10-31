@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS denuncias (
     descripcion TEXT NOT NULL,
     ubicacion VARCHAR(255) NOT NULL,
     ciudadano VARCHAR(100) NOT NULL,
-    telefono VARCHAR(15) NOT NULL,
+    telefono VARCHAR(15),
     fecha DATE NOT NULL,
     estado ENUM('Pendiente', 'En proceso', 'Resuelto') DEFAULT 'Pendiente',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
